@@ -1,0 +1,36 @@
+{
+  "name": "restaurant-saas-types",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm && tsc --emitDeclarationOnly",
+    "dev": "tsup src/index.ts --format cjs,esm --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoPBernardo/restaurant-saas-types-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodrigoPBernardo/restaurant-saas-types-/issues"
+  },
+  "homepage": "https://github.com/RodrigoPBernardo/restaurant-saas-types-#readme",
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.2"
+  }
+}
