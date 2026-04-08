@@ -1,8 +1,8 @@
-import { BaseEntity } from '../common/base.js'
+export type TableStatus = 'free' | 'reserved' | 'occupied'
 
-export interface Table extends BaseEntity {
-    restaurantId: string
-    tableNumber: number
+export interface Table {
+    id: string
+    number: number
     capacity: number
-    combinableWith: string[] // IDs de mesas
+    status: TableStatus
 }

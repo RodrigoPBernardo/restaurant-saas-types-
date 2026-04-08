@@ -4,4 +4,5 @@ export interface CreateReservationDTO {
     date: string
     time: string
     people: number
+    assignedTableIds?: string[]
 }
