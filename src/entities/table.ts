@@ -5,4 +5,5 @@ export interface Table {
     number: number
     capacity: number
     status: TableStatus
+    restaurant_id: string
 }
