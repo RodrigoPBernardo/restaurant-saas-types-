@@ -7,3 +7,4 @@ export * from './dto/paginatedResponse.dto.js'
 export * from './dto/updateTable.dto.js'
 export * from "./entities/restaurant.js"
 export * from "./dto/updateRestaurant.dto.js"
+export * from "./entities/shift.js"

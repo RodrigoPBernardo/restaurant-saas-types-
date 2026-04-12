@@ -1,12 +1,10 @@
-import { ShiftType } from "../entities/reservation.js";
-
 export interface CreateReservationDTO {
     name: string
     phone: string
     date: string
-    shift: ShiftType
+    shift_id: string // UUID reference to shifts table
     people: number
     isVip?: boolean
     tableIds?: string[]
-
+    isManualOverride?: boolean
 }
