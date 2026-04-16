@@ -7,4 +7,6 @@ export interface CreateReservationDTO {
     isVip?: boolean
     tableIds?: string[]
     isManualOverride?: boolean
+    time?: string // HH:mm
+    notes?: string
 }

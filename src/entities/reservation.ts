@@ -12,6 +12,8 @@ export interface Reservation {
   tableIds?: string[]
   tableNumbers?: number[]
   isManualOverride?: boolean
+  time: string // HH:mm — arrival time within the shift
+  notes?: string
 
   expectedArrivalTime?: string // Formato HH:MM
   createdAt: string
