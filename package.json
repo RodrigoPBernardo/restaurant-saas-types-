@@ -16,7 +16,8 @@
   ],
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm && tsc --emitDeclarationOnly",
-    "dev": "tsup src/index.ts --format cjs,esm --watch"
+    "dev": "tsup src/index.ts --format cjs,esm --watch",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
